@@ -1,0 +1,21 @@
+##Add everything that you dont want to commit into github
+.env
+*.pem
+*.key
+
+.venv
+node_modules
+
+*.tfstate
+
+*.tfstate.*
+*.tfvars
+.tfvars.json
+.teraform/
+
+.DS_Store
+Thumbs.bd
+
+*.zip
+*.jar
+*.war
