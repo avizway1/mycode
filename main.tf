@@ -17,6 +17,6 @@ resource "aws_instance" "mumbaiserver" {
   key_name               = "awar11-na"
 
   tags = {
-    Name = "Web-server-test"
+    Name = "Web-server-locktest"
   }
 }
