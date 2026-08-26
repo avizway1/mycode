@@ -12,6 +12,8 @@ node_modules
 *.tfvars
 .tfvars.json
 .teraform/
+.terraform/
+.terraform.lock.hcl
 
 .DS_Store
 Thumbs.bd
