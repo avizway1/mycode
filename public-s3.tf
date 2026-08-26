@@ -1,9 +1,6 @@
-provider "aws" {
-  region = "ap-south-1"
-}
 
 resource "aws_s3_bucket" "public_bucket" {
-  bucket = "aviz-hcp-test-12062026"
+  bucket = "aviz-hcp-test-120620261"
 }
 
 resource "aws_s3_bucket_public_access_block" "this" {
