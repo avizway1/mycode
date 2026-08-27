@@ -1,15 +1,3 @@
-provider "aws" {
-  region = "ap-south-1"
-}
-
-terraform {
-  cloud {
-    organization = "aviz-organization"
-    workspaces {
-      name = "mycode"
-    }
-  }
-}
 
 resource "aws_instance" "mumbaiserver" {
   ami                    = "ami-035827357e3c7e810"
@@ -19,4 +7,8 @@ resource "aws_instance" "mumbaiserver" {
   tags = {
     Name = "Web-server-localtest"
   }
+}
+
+resource "aws_s3_bucket" "public_bucket" {
+  bucket = "aviz-hcp-test-120620261"
 }
